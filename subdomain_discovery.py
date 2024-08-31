@@ -4,14 +4,14 @@ def subdomain_discovery(domain):
     try:
         url = f"https://crt.sh/?q=%25.{domain}&output=json"
         response = requests.get(url)
-        response.raise_for_status()  # Raises an error if the HTTP request fails
-        subdomains = set()  # Use a set to store unique subdomains
+        response.raise_for_status()
+        subdomains = set()
         
         certificates = response.json()
         for certificate in certificates:
             subdomain = certificate.get('name_value', '')
             if subdomain:
-                # Get only the part of the subdomain that matches the main domain
+                
                 subdomain = subdomain.strip().lower()
                 if subdomain.endswith(domain):
                     subdomains.add(subdomain)

@@ -6,4 +6,5 @@ This project contains a simple Python tool designed to discover subdomains for a
 
 python subdomain_discovery.py
 
-# WARNING: This script is intended for educational purposes only. 
+# WARNING: 
+This script is intended for educational purposes only. 

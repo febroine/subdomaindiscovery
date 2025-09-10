@@ -6,7 +6,7 @@ It queries the Certificate Transparency logs to extract known subdomains via pub
 ## 🌐 Example Usage
 
 ```bash
-$ python subdomaindiscovery.py
+$ python subdomain_discovery.py
 Enter the domain for subdomain discovery: example.com
 Found Subdomains for example.com:
 example.com
